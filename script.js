@@ -6,8 +6,8 @@ const firebaseConfig = {
   authDomain: "schoolplannerv2.firebaseapp.com",
   projectId: "schoolplannerv2",
   storageBucket: "schoolplannerv2.appspot.com",
-  messagingSenderId: "선생님의_SENDER_ID", // 실제 messagingSenderId 입력
-  appId: "선생님의_APP_ID" // 실제 appId 입력
+  messagingSenderId: "91415453413", // 실제 messagingSenderId 입력
+  appId: "1:91415453413:web:9d62e03bc686a537ccfe0c" // 실제 appId 입력
 };
 
 // Firebase 초기화 및 Firestore DB 객체 생성
