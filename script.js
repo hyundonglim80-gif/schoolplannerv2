@@ -10,6 +10,17 @@ const firebaseConfig = {
   appId: "1:91415453413:web:9d62e03bc686a537ccfe0c"
 };
 
+// Firebase SDK 로드 여부 검증
+if (typeof firebase === 'undefined') {
+  console.error("Firebase SDK가 index.html에서 정상적으로 로드되지 않았습니다.");
+} else {
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+  }
+}
+
+const db = firebase.firestore();
+
 // Firebase 초기화 및 Firestore DB 객체 생성
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
