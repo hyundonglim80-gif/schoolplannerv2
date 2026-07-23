@@ -2,7 +2,7 @@
 // Firebase Firestore V2 초기화 설정
 // ============================================
 const firebaseConfig = {
-  apiKey: "선생님의_API_KEY", // Firebase 콘솔 SDK 설정에서 발급받은 실제 apiKey 입력
+  apiKey: "AIzaSyCUFuxkXPRLOLAQ8ZanuvR58EfVnDRqPQc", // Firebase 콘솔 SDK 설정에서 발급받은 실제 apiKey 입력
   authDomain: "schoolplannerv2.firebaseapp.com",
   projectId: "schoolplannerv2",
   storageBucket: "schoolplannerv2.appspot.com",
