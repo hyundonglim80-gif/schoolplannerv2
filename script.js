@@ -1,7 +1,26 @@
 /**
  * ★ 주의: 반드시 1단계에서 새로 배포한 웹 앱 URL을 따옴표 안에 넣어주세요!
  */
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbztEDUhTVL_1zXG-r69oPNkpG10AgxAxtUbhzBzhV9TQ0y_RBdV5Q-K4MVn0NKEbZCy/exec";
+//const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbztEDUhTVL_1zXG-r69oPNkpG10AgxAxtUbhzBzhV9TQ0y_RBdV5Q-K4MVn0NKEbZCy/exec";
+
+// ============================================
+// Firebase Firestore V2 초기화 설정
+// ============================================
+const firebaseConfig = {
+  apiKey: "선생님의_API_KEY", // Firebase 콘솔에서 확인한 API 키
+  authDomain: "schoolplannerv2.firebaseapp.com",
+  projectId: "schoolplannerv2",
+  storageBucket: "schoolplannerv2.appspot.com",
+  messagingSenderId: "선생님의_SENDER_ID",
+  appId: "선생님의_APP_ID"
+};
+
+// Firebase 앱 초기화 및 Firestore 객체 생성
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
+// (참고: 기존 구글 앱스 스크립트 URL은 더 이상 사용하지 않으므로 주석 처리해 둡니다)
+// const WEB_APP_URL = "https://script.google.com/...";
 
 let currentDate = new Date();
 // 저장된 보기 모드가 있으면 가져오고, 없으면 기본값 'week' 사용
